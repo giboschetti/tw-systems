@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
+import emailjs from '@emailjs/browser'; // Import EmailJS
 
 // Icons
 const EmailIcon = () => (
@@ -32,9 +33,12 @@ const productOptions = [
   { id: 'custom-solution', name: 'Individuelle Software oder KI Lösungen' },
 ];
 
-export const ContactPage = () => {
+export const ContactPage: React.FC = () => {
   const { language } = useLanguage();
-  
+
+  // EmailJS init (replace with your Public Key)
+  emailjs.init("djdpwmhC2Mt_3NNef"); // Replace with your Public Key
+
   // Form state
   const [formData, setFormData] = useState({
     fullName: '',
@@ -128,28 +132,34 @@ export const ContactPage = () => {
     
     if (validateForm()) {
       setIsSubmitting(true);
-      
-      // Simulate API call
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setSubmitSuccess(true);
-        
-        // Reset form after successful submission
-        setFormData({
-          fullName: '',
-          email: '',
-          phone: '',
-          company: '',
-          projectName: '',
-          products: [],
-          message: ''
+
+      // Send email using EmailJS (replace with your Service ID and Template ID)
+      emailjs.send("service_c5p7wxt", "template_52hw5d3", formData) // Replace with your Service ID and Template ID
+        .then((result: any) => {
+          console.log(result.text);
+          setIsSubmitting(false);
+          setSubmitSuccess(true);
+        }, (error: any) => {
+          console.log(error.text);
+          setIsSubmitting(false);
+          // Handle error here (e.g., display an error message to the user)
         });
-        
-        // Reset success message after 5 seconds
-        setTimeout(() => {
-          setSubmitSuccess(false);
-        }, 5000);
-      }, 1500);
+
+      // Reset form after successful submission
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        company: '',
+        projectName: '',
+        products: [],
+        message: ''
+      });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setSubmitSuccess(false);
+      }, 5000);
     }
   };
   
@@ -412,7 +422,7 @@ export const ContactPage = () => {
                   <div className="flex-shrink-0 mt-1">
                     <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
-                    </svg>
+                  </svg>
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-semibold text-darkBlue">
