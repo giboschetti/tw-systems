@@ -42,14 +42,14 @@ export const Layout = ({ children }: LayoutProps) => {
   
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-white">
+      <header className="bg-white text-darkBlue shadow-sm">
         <nav className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <Link to="/" className="text-xl font-bold">TW-Systems</Link>
             
             {/* Mobile menu button */}
             <button
-              className="lg:hidden text-white focus:outline-none"
+              className="lg:hidden text-darkBlue focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -63,15 +63,15 @@ export const Layout = ({ children }: LayoutProps) => {
             
             {/* Desktop menu */}
             <div className="hidden lg:flex space-x-6">
-              <Link to="/" className="hover:text-gray-300">Home</Link>
-              <Link to="/about" className="hover:text-gray-300">About</Link>
+              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+              <Link to="/about" className="hover:text-primary transition-colors">About</Link>
               <div className="flex space-x-6">
-                <span className="text-gray-300 self-center">Products:</span>
+                <span className="text-gray-500 self-center">Products:</span>
                 
                 {/* Bauherr Category */}
                 <div className="relative">
                   <button
-                    className="hover:text-gray-300 focus:outline-none dropdown-button"
+                    className="hover:text-primary transition-colors focus:outline-none dropdown-button"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent event from bubbling up
                       toggleDropdown('bauherr');
@@ -89,7 +89,7 @@ export const Layout = ({ children }: LayoutProps) => {
                 {/* Bauunternehmen Category */}
                 <div className="relative">
                   <button
-                    className="hover:text-gray-300 focus:outline-none dropdown-button"
+                    className="hover:text-primary transition-colors focus:outline-none dropdown-button"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent event from bubbling up
                       toggleDropdown('bauunternehmen');
@@ -108,7 +108,7 @@ export const Layout = ({ children }: LayoutProps) => {
                 {/* Lieferanten Category */}
                 <div className="relative">
                   <button
-                    className="hover:text-gray-300 focus:outline-none dropdown-button"
+                    className="hover:text-primary transition-colors focus:outline-none dropdown-button"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent event from bubbling up
                       toggleDropdown('lieferanten');
@@ -121,48 +121,48 @@ export const Layout = ({ children }: LayoutProps) => {
                   </div>
                 </div>
               </div>
-              <Link to="/contact" className="hover:text-gray-300">Contact</Link>
+              <Link to="/contact" className="hover:text-primary transition-colors">Contact</Link>
             </div>
           </div>
           
           {/* Mobile menu dropdown */}
           {mobileMenuOpen && (
-            <div className="lg:hidden mt-4 pb-4">
+            <div className="lg:hidden mt-4 pb-4 bg-white border-t border-gray-200">
               <div className="flex flex-col space-y-2">
-                <Link to="/" className="text-white py-2 hover:text-gray-300">Home</Link>
-                <Link to="/about" className="text-white py-2 hover:text-gray-300">About</Link>
-                <Link to="/contact" className="text-white py-2 hover:text-gray-300">Contact</Link>
+                <Link to="/" className="text-darkBlue py-2 hover:text-primary transition-colors">Home</Link>
+                <Link to="/about" className="text-darkBlue py-2 hover:text-primary transition-colors">About</Link>
+                <Link to="/contact" className="text-darkBlue py-2 hover:text-primary transition-colors">Contact</Link>
                 
                 {/* Mobile Products Section */}
                 <div className="mt-2">
-                  <h3 className="text-gray-300 font-semibold mb-2">Products:</h3>
+                  <h3 className="text-gray-500 font-semibold mb-2">Products:</h3>
                   
                   {/* Bauherr Category */}
                   <div className="ml-2 mb-2">
-                    <h4 className="text-white font-medium">Bauherr</h4>
+                    <h4 className="text-darkBlue font-medium">Bauherr</h4>
                     <div className="ml-4 flex flex-col space-y-1 mt-1">
-                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-300 hover:text-white">Rail Logistics mit Raillog.app</Link>
-                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-300 hover:text-white">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
-                      <Link to="/products/bauberatung/conexpert" className="text-gray-300 hover:text-white">ConExpert</Link>
+                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-600 hover:text-primary transition-colors">Rail Logistics mit Raillog.app</Link>
+                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-600 hover:text-primary transition-colors">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
+                      <Link to="/products/bauberatung/conexpert" className="text-gray-600 hover:text-primary transition-colors">ConExpert</Link>
                     </div>
                   </div>
                   
                   {/* Bauunternehmen Category */}
                   <div className="ml-2 mb-2">
-                    <h4 className="text-white font-medium">Bauunternehmen</h4>
+                    <h4 className="text-darkBlue font-medium">Bauunternehmen</h4>
                     <div className="ml-4 flex flex-col space-y-1 mt-1">
-                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-300 hover:text-white">Rail Logistics mit Raillog.app</Link>
-                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-300 hover:text-white">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
-                      <Link to="/products/abrechnung/extract" className="text-gray-300 hover:text-white">Schnelle Abrechnung von Bauleistungen mit Extract</Link>
-                      <Link to="/products/bauberatung/conexpert" className="text-gray-300 hover:text-white">ConExpert</Link>
+                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-600 hover:text-primary transition-colors">Rail Logistics mit Raillog.app</Link>
+                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-600 hover:text-primary transition-colors">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
+                      <Link to="/products/abrechnung/extract" className="text-gray-600 hover:text-primary transition-colors">Schnelle Abrechnung von Bauleistungen mit Extract</Link>
+                      <Link to="/products/bauberatung/conexpert" className="text-gray-600 hover:text-primary transition-colors">ConExpert</Link>
                     </div>
                   </div>
                   
                   {/* Lieferanten Category */}
                   <div className="ml-2">
-                    <h4 className="text-white font-medium">Lieferanten</h4>
+                    <h4 className="text-darkBlue font-medium">Lieferanten</h4>
                     <div className="ml-4 flex flex-col space-y-1 mt-1">
-                      <Link to="/products/kundenliste/proj-finder" className="text-gray-300 hover:text-white">Gezielte Kundenliste mit Proj-Finder</Link>
+                      <Link to="/products/kundenliste/proj-finder" className="text-gray-600 hover:text-primary transition-colors">Gezielte Kundenliste mit Proj-Finder</Link>
                     </div>
                   </div>
                 </div>
