@@ -5,6 +5,8 @@ import './App.css';
 import { Layout } from './components/layout/Layout';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
+import { ContactPage } from './pages/ContactPage';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 // Import product pages
 import RailLogistics from './pages/products/rail-logistics-mit-raillog-app';
@@ -15,9 +17,10 @@ import ConExpert from './pages/products/conexpert';
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Routes>
+    <LanguageProvider>
+      <Router>
+        <Layout>
+          <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -31,14 +34,14 @@ function App() {
           <Route path="/products/abrechnung/extract" element={<SchnelleAbrechnung />} />
           <Route path="/products/kundenliste/proj-finder" element={<GezielteKundenliste />} />
           <Route path="/products/bauberatung/conexpert" element={<ConExpert />} />
-        </Routes>
-      </Layout>
-    </Router>
+          </Routes>
+        </Layout>
+      </Router>
+    </LanguageProvider>
   );
 }
 
 // Placeholder components - we'll create these in separate files later
-const ContactPage = () => <div className="container mx-auto px-4 py-8">Contact Page</div>;
 const BauherrPage = () => <div className="container mx-auto px-4 py-8">Bauherr Page</div>;
 const BauunternehmenPage = () => <div className="container mx-auto px-4 py-8">Bauunternehmen Page</div>;
 const LieferantenPage = () => <div className="container mx-auto px-4 py-8">Lieferanten Page</div>;
