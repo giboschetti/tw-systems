@@ -51,7 +51,7 @@ export const Layout = ({ children }: LayoutProps) => {
               <img
                 src="/images/logos/tw_logo.png"
                 alt="Track Wise Systems Logo"
-                className="h-16 mr-2"
+                className="h-8 mr-2"
               />
               <span className="text-xl font-medium">
                 <span className="font-bold">T</span>rack <span className="font-bold">W</span>ize Systems
