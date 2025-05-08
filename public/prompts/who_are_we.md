@@ -3,49 +3,49 @@ ENGLISH ------------------------------------------------------------------------
 Who We Are
 TrackWise Systems (TW-Systems)
 
-At TrackWise Systems, we are a passionate team of professionals bridging two worlds: the precision and complexity of the railway industry and the transformative power of cutting-edge technology. With deep roots in railway construction and expertise in software development and artificial intelligence, we are on a mission to solve real-world challenges that railway projects face every day.
+At TrackWise Systems, we're a team of railway enthusiasts and technology lovers working together to make railway projects better for everyone. We've spent time in muddy construction sites and late-night coding sessions because we genuinely care about solving the real challenges that railway projects face every day.
 
-Our goal is simple yet ambitious: to harness technology in ways that make railway construction smarter, faster, and more human-centered—because every successful project means a stronger, more reliable railway network for the communities it serves.
+Our goal is simple: to create tools that make railway construction more human-friendly and less stressful—because we believe that when projects run smoothly, communities get the reliable railway networks they deserve.
 
 Our Mission & Vision
-We envision a future where railway construction is no longer a source of stress, delays, or inefficiencies but a seamlessly coordinated process that benefits everyone involved—from project managers and engineers to passengers who rely on safe and timely rail services.
+We dream of a future where railway construction brings satisfaction instead of stress, where collaboration replaces confusion, and where everyone involved—from project managers to the passengers waiting for their train—feels the positive impact.
 
-Our mission is to revolutionize how railway projects are delivered worldwide. We aim to make every project more efficient, less stressful, and more cost-effective. But it goes deeper: by empowering the professionals behind these projects, we are also contributing to a more sustainable and reliable public transport system that touches the daily lives of millions.
+We're working to transform how railway projects come to life. Not just to make them more efficient (though that's important too), but to make the entire experience better for the people behind these projects. When we support the humans doing this essential work, we're also helping build a more sustainable and reliable public transport system that improves daily life for millions.
 
-We believe that technology, when applied thoughtfully and purposefully, can transform the railway industry into a model of excellence—where collaboration is smooth, setbacks are minimized, and success feels inevitable.
+We believe that technology, when designed with empathy and purpose, can help create railway projects where teamwork flows naturally, problems get solved together, and success becomes the expected outcome rather than a pleasant surprise.
 
 Our Values
-1. Projects & Results First
-We start by deeply understanding your project's unique challenges and objectives. Before we propose any solution, we ensure it is transparent, realistic, and aligned with your goals. Our success is measured by yours—our commitment is to deliver tangible improvements that truly make a difference.
+1. People & Projects First
+We start by listening and understanding what makes your project unique. Before suggesting any technology, we make sure it actually helps the people who'll use it. Your success is what matters to us—we're here to create meaningful improvements that make your workday better.
 
-2. Data Safety & Trust
-Trust is at the heart of everything we do. Whenever possible, we work exclusively with publicly available data, reducing the need to share sensitive project information. When deeper collaboration is required, we protect your confidentiality with robust non-disclosure agreements. Additionally, we offer exclusive partnerships on specific projects to ensure full alignment and peace of mind.
+2. Openness & Trust
+Relationships matter more than transactions. We prefer working with publicly available data whenever possible, so you don't have to worry about sharing sensitive information. When deeper collaboration makes sense, we protect your confidentiality completely. We're building partnerships based on mutual respect and transparency.
 
-3. Continuous Improvement
-We believe that staying ahead requires constant learning and evolution. We relentlessly refine our expertise—both in railway industry best practices and in emerging technologies—to keep delivering solutions that are relevant and impactful. We welcome your feedback and thrive on adapting to your changing needs.
+3. Growing Together
+We love learning and evolving alongside you. We're constantly exploring both railway best practices and emerging technologies—not to chase trends, but to find genuinely helpful solutions. Your feedback shapes our work, and we adapt as your needs change because that's what good partners do.
 
 DEUTSCH ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Wer wir sind
 TrackWise Systems (TW-Systems)
 
-Wir bei TrackWise Systems sind ein engagiertes Team von Fachleuten, das zwei Welten vereint: die Präzision und Komplexität der Bahnindustrie mit der transformativen Kraft modernster Technologie. Mit tiefem Know-how im Bahnbau und fundierter Expertise in Softwareentwicklung und Künstlicher Intelligenz haben wir es uns zur Aufgabe gemacht, reale Herausforderungen von Bahnprojekten nachhaltig zu lösen.
+Bei TrackWise Systems sind wir ein Team aus Bahnbegeisterten und Technologieliebhabern, die gemeinsam daran arbeiten, Bahnprojekte für alle Beteiligten zu verbessern. Wir haben Zeit auf schlammigen Baustellen und in nächtlichen Programmiersessions verbracht, weil wir uns aufrichtig darum kümmern, die echten Herausforderungen zu lösen, mit denen Bahnprojekte täglich konfrontiert sind.
 
-Unser Ziel ist klar und ambitioniert: Technologie so einzusetzen, dass der Bahnbau intelligenter, effizienter und menschlicher wird – denn jedes erfolgreich realisierte Projekt stärkt die Zuverlässigkeit des Bahnnetzes für die Gesellschaft.
+Unser Ziel ist einfach: Werkzeuge zu schaffen, die den Bahnbau menschenfreundlicher und weniger stressig machen – denn wir glauben, dass Gemeinschaften die zuverlässigen Bahnnetze bekommen, die sie verdienen, wenn Projekte reibungslos laufen.
 
 Unsere Mission & Vision
-Wir stellen uns eine Zukunft vor, in der Bahnprojekte nicht mehr Quelle von Stress, Verzögerungen oder Ineffizienz sind, sondern reibungslos und koordiniert ablaufen – zum Vorteil aller Beteiligten: von Projektleitern und Ingenieuren bis hin zu den Fahrgästen, die auf einen sicheren und pünktlichen Bahnverkehr angewiesen sind.
+Wir träumen von einer Zukunft, in der Bahnbau Zufriedenheit statt Stress bringt, in der Zusammenarbeit Verwirrung ersetzt und in der alle Beteiligten – vom Projektleiter bis zum Fahrgast, der auf seinen Zug wartet – die positive Wirkung spüren.
 
-Unsere Mission ist es, die Abwicklung von Bahnprojekten weltweit zu revolutionieren. Wir wollen jedes Projekt effizienter, stressfreier und kostensparender gestalten. Doch unser Antrieb geht noch weiter: Indem wir die Fachleute hinter diesen Projekten unterstützen, leisten wir einen Beitrag zu einem nachhaltigeren und zuverlässigeren öffentlichen Verkehrsnetz, das das tägliche Leben von Millionen Menschen verbessert.
+Wir arbeiten daran, die Entstehung von Bahnprojekten zu verändern. Nicht nur, um sie effizienter zu machen (obwohl das auch wichtig ist), sondern um das gesamte Erlebnis für die Menschen hinter diesen Projekten zu verbessern. Wenn wir die Menschen unterstützen, die diese wesentliche Arbeit leisten, helfen wir auch beim Aufbau eines nachhaltigeren und zuverlässigeren öffentlichen Verkehrsnetzes, das das tägliche Leben von Millionen verbessert.
 
-Wir sind überzeugt: Technologie, klug und sinnvoll eingesetzt, hat die Kraft, die Bahnindustrie grundlegend zu transformieren – hin zu einem Modell der Exzellenz, in dem Zusammenarbeit reibungslos funktioniert, Rückschläge minimiert werden und Erfolge selbstverständlich erscheinen.
+Wir glauben, dass Technologie, wenn sie mit Einfühlungsvermögen und Zweck gestaltet wird, dazu beitragen kann, Bahnprojekte zu schaffen, bei denen Teamarbeit natürlich fließt, Probleme gemeinsam gelöst werden und Erfolg zum erwarteten Ergebnis wird, nicht zur angenehmen Überraschung.
 
 Unsere Werte
-1. Projekt & Ergebnis im Fokus
-Wir beginnen damit, Ihr Projekt mit all seinen individuellen Herausforderungen und Zielen genau zu verstehen. Bevor wir eine Lösung vorschlagen, stellen wir sicher, dass sie transparent, realistisch und auf Ihre Anforderungen zugeschnitten ist. Unser Erfolg misst sich an Ihrem – unser Anspruch ist es, messbare Verbesserungen zu liefern, die wirklich etwas bewegen.
+1. Menschen & Projekte im Mittelpunkt
+Wir beginnen damit, zuzuhören und zu verstehen, was Ihr Projekt einzigartig macht. Bevor wir Technologie vorschlagen, stellen wir sicher, dass sie den Menschen, die sie nutzen werden, tatsächlich hilft. Ihr Erfolg ist das, was für uns zählt – wir sind hier, um bedeutsame Verbesserungen zu schaffen, die Ihren Arbeitsalltag besser machen.
 
-2. Datensicherheit & Vertrauen
-Vertrauen steht im Zentrum unseres Handelns. Wann immer möglich, arbeiten wir ausschließlich mit öffentlich verfügbaren Daten, um sensible Projektdaten zu schützen. Falls eine tiefere Zusammenarbeit erforderlich ist, sichern wir Ihre Daten durch verlässliche Geheimhaltungsvereinbarungen (NDAs). Zudem bieten wir die Möglichkeit einer exklusiven Partnerschaft für bestimmte Projekte, damit Sie maximale Sicherheit genießen.
+2. Offenheit & Vertrauen
+Beziehungen sind wichtiger als Transaktionen. Wir arbeiten wann immer möglich lieber mit öffentlich verfügbaren Daten, damit Sie sich keine Sorgen um die Weitergabe sensibler Informationen machen müssen. Wenn eine tiefere Zusammenarbeit sinnvoll ist, schützen wir Ihre Vertraulichkeit vollständig. Wir bauen Partnerschaften auf, die auf gegenseitigem Respekt und Transparenz basieren.
 
-3. Kontinuierliche Verbesserung
-Wir sind überzeugt: Nur wer ständig dazulernt und sich weiterentwickelt, bleibt langfristig relevant. Deshalb vertiefen wir kontinuierlich unser Wissen – sowohl in den Best Practices der Bahnindustrie als auch in den neuesten technologischen Entwicklungen. So können wir Lösungen liefern, die stets aktuell und wirksam sind. Ihr Feedback ist uns wichtig, und wir passen uns flexibel Ihren Bedürfnissen an.
+3. Gemeinsam wachsen
+Wir lieben es, mit Ihnen zu lernen und uns weiterzuentwickeln. Wir erkunden ständig sowohl bewährte Bahnpraktiken als auch neue Technologien – nicht um Trends hinterherzujagen, sondern um wirklich hilfreiche Lösungen zu finden. Ihr Feedback prägt unsere Arbeit, und wir passen uns an, wenn sich Ihre Bedürfnisse ändern, denn das ist es, was gute Partner tun.

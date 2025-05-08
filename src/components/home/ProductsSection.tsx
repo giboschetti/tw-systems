@@ -11,7 +11,7 @@ const RaillogLogo = () => (
       alt="Raillog.app Logo"
       className="h-10 w-10 mr-2"
     />
-    <span className="ml-2 text-2xl font-bold text-slate-800">Raillog.app</span>
+    <span className="ml-2 text-2xl font-bold text-slate-800 font-montserrat">Raillog.app</span>
   </div>
 );
 
@@ -23,7 +23,7 @@ const ConlabLogo = () => (
       <rect x="5" y="5" width="30" height="30" rx="4" fill="#f97316" />
       <path d="M20 10v20M14 20h12M27 10v20" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
-    <span className="ml-2 text-2xl font-bold text-slate-800">Conlab</span>
+    <span className="ml-2 text-2xl font-bold text-slate-800 font-montserrat">Conlab</span>
   </div>
 );
 
@@ -33,7 +33,7 @@ const ExtractLogo = () => (
       <rect x="5" y="5" width="30" height="30" rx="4" fill="#f59e0b" />
       <path d="M15 15h10M15 20h10M15 25h6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
-    <span className="ml-2 text-2xl font-bold text-slate-800">Extract</span>
+    <span className="ml-2 text-2xl font-bold text-slate-800 font-montserrat">Extract</span>
   </div>
 );
 
@@ -43,7 +43,7 @@ const ProjFinderLogo = () => (
       <rect x="5" y="5" width="30" height="30" rx="4" fill="#10b981" />
       <path d="M20 10v5M20 25v5M10 20h20M15 15l10 10M25 15l-10 10" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
-    <span className="ml-2 text-2xl font-bold text-slate-800">Proj-Finder</span>
+    <span className="ml-2 text-2xl font-bold text-slate-800 font-montserrat">Proj-Finder</span>
   </div>
 );
 
@@ -53,7 +53,7 @@ const ConExpertLogo = () => (
       <rect x="5" y="5" width="30" height="30" rx="4" fill="#ef4444" />
       <path d="M15 15l10 10M25 15l-10 10M13 20h14" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
-    <span className="ml-2 text-2xl font-bold text-slate-800">ConExpert</span>
+    <span className="ml-2 text-2xl font-bold text-slate-800 font-montserrat">ConExpert</span>
   </div>
 );
 
@@ -63,7 +63,7 @@ const CustomSolutionLogo = () => (
       <rect x="5" y="5" width="30" height="30" rx="4" fill="#6366f1" />
       <path d="M15 15h10M15 20h5M20 20h5M15 25h10M20 12v16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
     </svg>
-    <span className="ml-2 text-2xl font-bold text-slate-800">Customized Solution</span>
+    <span className="ml-2 text-2xl font-bold text-slate-800 font-montserrat">Customized Solution</span>
   </div>
 );
 
@@ -189,7 +189,7 @@ export const ProductsSection = () => {
   const { language } = useLanguage();
   const products = getProducts(language);
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0 }}
@@ -197,7 +197,7 @@ export const ProductsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-4xl font-bold text-center mb-12 font-montserrat">
             {language === 'en' ? 'Our Tools & Services' : 'Unsere Tools & Services'}
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -209,22 +209,22 @@ export const ProductsSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white p-6 rounded-lg shadow-lg relative"
+                className="bg-white p-6 rounded-lg shadow-lg relative border border-light"
               >
                 {product.status && (
                   <div
-                    className={`absolute top-2 right-2 px-2 py-1 rounded-md text-xs font-semibold text-white ${
-                      product.status.color === 'green' ? 'bg-green-500' : 'bg-amber-400'
+                    className={`absolute top-2 right-2 px-2 py-1 rounded-md text-xs font-semibold text-white font-montserrat ${
+                      product.status.color === 'green' ? 'bg-secondary' : 'bg-accent'
                     }`}
                   >
                     {product.status.text}
                   </div>
                 )}
                 <product.logo />
-                <p className="text-gray-600 mb-4">{product.description}</p>
+                <p className="text-gray-600 mb-4 font-opensans">{product.description}</p>
                 <Link
                   to={product.path}
-                  className="text-primary font-semibold hover:text-secondary"
+                  className="text-primary font-semibold hover:text-secondary font-montserrat"
                 >
                   {language === 'en' ? 'Learn more →' : 'Mehr erfahren →'}
                 </Link>

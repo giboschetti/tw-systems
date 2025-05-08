@@ -43,9 +43,9 @@ export const Layout = ({ children }: LayoutProps) => {
   }, []);
   
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col font-opensans">
       <header className="bg-white text-darkBlue shadow-sm">
-        <nav className="container mx-auto px-4 py-6">
+        <nav className="container mx-auto px-4 py-6 font-montserrat">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
               <img
@@ -53,7 +53,7 @@ export const Layout = ({ children }: LayoutProps) => {
                 alt="Track Wise Systems Logo"
                 className="h-8 mr-2"
               />
-              <span className="text-xl font-medium">
+              <span className="text-xl font-large font-montserrat">
                 <span className="font-bold">T</span>rack <span className="font-bold">W</span>ize Systems
               </span>
             </Link>
@@ -66,8 +66,8 @@ export const Layout = ({ children }: LayoutProps) => {
                   onClick={() => setLanguage('en')}
                   className={`px-3 py-1 text-xs font-medium rounded-l-lg transition-colors duration-200 ${
                     language === 'en'
-                      ? 'bg-primary text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-100'
+                      ? 'bg-secondary text-white'
+                      : 'bg-white text-gray-700 hover:bg-light'
                   }`}
                 >
                   EN
@@ -77,8 +77,8 @@ export const Layout = ({ children }: LayoutProps) => {
                   onClick={() => setLanguage('de')}
                   className={`px-3 py-1 text-xs font-medium rounded-r-lg transition-colors duration-200 ${
                     language === 'de'
-                      ? 'bg-primary text-white'
-                      : 'bg-white text-gray-700 hover:bg-gray-100'
+                      ? 'bg-secondary text-white'
+                      : 'bg-white text-gray-700 hover:bg-light'
                   }`}
                 >
                   DE
@@ -101,11 +101,11 @@ export const Layout = ({ children }: LayoutProps) => {
             </button>
             
             {/* Desktop menu */}
-            <div className="hidden lg:flex space-x-6">
-              <Link to="/" className="hover:text-primary transition-colors">
+            <div className="hidden lg:flex space-x-6 font-montserrat">
+              <Link to="/" className="hover:text-secondary transition-colors">
                 {language === 'en' ? 'Home' : 'Startseite'}
               </Link>
-              <Link to="/about" className="hover:text-primary transition-colors">
+              <Link to="/about" className="hover:text-secondary transition-colors">
                 {language === 'en' ? 'About' : 'Über uns'}
               </Link>
               <div className="flex space-x-6">
@@ -116,7 +116,7 @@ export const Layout = ({ children }: LayoutProps) => {
                 {/* Bauherr Category */}
                 <div className="relative">
                   <button
-                    className="hover:text-primary transition-colors focus:outline-none dropdown-button"
+                    className="hover:text-secondary transition-colors focus:outline-none dropdown-button"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent event from bubbling up
                       toggleDropdown('bauherr');
@@ -125,16 +125,16 @@ export const Layout = ({ children }: LayoutProps) => {
                     {language === 'en' ? 'Client' : 'Bauherr'}
                   </button>
                   <div className={`absolute left-0 mt-2 w-72 bg-white rounded-md shadow-lg z-50 dropdown-content ${activeDropdown === 'bauherr' ? 'block' : 'hidden'}`}>
-                    <Link to="/products/rail-logistics/raillog-app" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Rail Logistics mit Raillog.app</Link>
-                    <Link to="/products/stakeholder-planung/conlab" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Fachdienste- & Bauprogramm Koordination mit Conlab</Link>
-                    <Link to="/products/bauberatung/conexpert" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Optimales Bauverfahren mit ConExpert</Link>
+                    <Link to="/products/rail-logistics/raillog-app" className="block px-4 py-2 text-gray-800 hover:bg-light">Rail Logistics mit Raillog.app</Link>
+                    <Link to="/products/stakeholder-planung/conlab" className="block px-4 py-2 text-gray-800 hover:bg-light">Fachdienste- & Bauprogramm Koordination mit Conlab</Link>
+                    <Link to="/products/bauberatung/conexpert" className="block px-4 py-2 text-gray-800 hover:bg-light">Optimales Bauverfahren mit ConExpert</Link>
                   </div>
                 </div>
                 
                 {/* Bauunternehmen Category */}
                 <div className="relative">
                   <button
-                    className="hover:text-primary transition-colors focus:outline-none dropdown-button"
+                    className="hover:text-secondary transition-colors focus:outline-none dropdown-button"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent event from bubbling up
                       toggleDropdown('bauunternehmen');
@@ -143,17 +143,17 @@ export const Layout = ({ children }: LayoutProps) => {
                     {language === 'en' ? 'Construction Company' : 'Bauunternehmen'}
                   </button>
                   <div className={`absolute left-0 mt-2 w-72 bg-white rounded-md shadow-lg z-50 dropdown-content ${activeDropdown === 'bauunternehmen' ? 'block' : 'hidden'}`}>
-                    <Link to="/products/rail-logistics/raillog-app" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Rail Logistics mit Raillog.app</Link>
-                    <Link to="/products/stakeholder-planung/conlab" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Fachdienste- & Bauprogramm Koordination mit Conlab</Link>
-                    <Link to="/products/abrechnung/extract" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Schnelle Abrechnung von Bauleistungen mit Extract</Link>
-                    <Link to="/products/bauberatung/conexpert" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Optimales Bauverfahren mit ConExpert</Link>
+                    <Link to="/products/rail-logistics/raillog-app" className="block px-4 py-2 text-gray-800 hover:bg-light">Rail Logistics mit Raillog.app</Link>
+                    <Link to="/products/stakeholder-planung/conlab" className="block px-4 py-2 text-gray-800 hover:bg-light">Fachdienste- & Bauprogramm Koordination mit Conlab</Link>
+                    <Link to="/products/abrechnung/extract" className="block px-4 py-2 text-gray-800 hover:bg-light">Schnelle Abrechnung von Bauleistungen mit Extract</Link>
+                    <Link to="/products/bauberatung/conexpert" className="block px-4 py-2 text-gray-800 hover:bg-light">Optimales Bauverfahren mit ConExpert</Link>
                   </div>
                 </div>
                 
                 {/* Lieferanten Category */}
                 <div className="relative">
                   <button
-                    className="hover:text-primary transition-colors focus:outline-none dropdown-button"
+                    className="hover:text-secondary transition-colors focus:outline-none dropdown-button"
                     onClick={(e) => {
                       e.stopPropagation(); // Prevent event from bubbling up
                       toggleDropdown('lieferanten');
@@ -162,11 +162,11 @@ export const Layout = ({ children }: LayoutProps) => {
                     {language === 'en' ? 'Suppliers' : 'Lieferanten'}
                   </button>
                   <div className={`absolute left-0 mt-2 w-72 bg-white rounded-md shadow-lg z-50 dropdown-content ${activeDropdown === 'lieferanten' ? 'block' : 'hidden'}`}>
-                    <Link to="/products/kundenliste/proj-finder" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gezielte Kundenliste mit Proj-Finder</Link>
+                    <Link to="/products/kundenliste/proj-finder" className="block px-4 py-2 text-gray-800 hover:bg-light">Gezielte Kundenliste mit Proj-Finder</Link>
                   </div>
                 </div>
               </div>
-              <Link to="/contact" className="hover:text-primary transition-colors">
+              <Link to="/contact" className="hover:text-secondary transition-colors">
                 {language === 'en' ? 'Contact' : 'Kontakt'}
               </Link>
             </div>
@@ -183,8 +183,8 @@ export const Layout = ({ children }: LayoutProps) => {
                     onClick={() => setLanguage('en')}
                     className={`px-4 py-2 text-sm font-medium rounded-l-lg transition-colors duration-200 ${
                       language === 'en'
-                        ? 'bg-primary text-white'
-                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                        ? 'bg-secondary text-white'
+                        : 'bg-white text-gray-700 hover:bg-light border border-gray-300'
                     }`}
                   >
                     English
@@ -194,8 +194,8 @@ export const Layout = ({ children }: LayoutProps) => {
                     onClick={() => setLanguage('de')}
                     className={`px-4 py-2 text-sm font-medium rounded-r-lg transition-colors duration-200 ${
                       language === 'de'
-                        ? 'bg-primary text-white'
-                        : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-300'
+                        ? 'bg-secondary text-white'
+                        : 'bg-white text-gray-700 hover:bg-light border border-gray-300'
                     }`}
                   >
                     Deutsch
@@ -203,14 +203,14 @@ export const Layout = ({ children }: LayoutProps) => {
                 </div>
               </div>
               
-              <div className="flex flex-col space-y-2">
-                <Link to="/" className="text-darkBlue py-2 hover:text-primary transition-colors">
+              <div className="flex flex-col space-y-2 font-montserrat">
+                <Link to="/" className="text-darkBlue py-2 hover:text-secondary transition-colors">
                   {language === 'en' ? 'Home' : 'Startseite'}
                 </Link>
-                <Link to="/about" className="text-darkBlue py-2 hover:text-primary transition-colors">
+                <Link to="/about" className="text-darkBlue py-2 hover:text-secondary transition-colors">
                   {language === 'en' ? 'About' : 'Über uns'}
                 </Link>
-                <Link to="/contact" className="text-darkBlue py-2 hover:text-primary transition-colors">
+                <Link to="/contact" className="text-darkBlue py-2 hover:text-secondary transition-colors">
                   {language === 'en' ? 'Contact' : 'Kontakt'}
                 </Link>
                 
@@ -226,9 +226,9 @@ export const Layout = ({ children }: LayoutProps) => {
                       {language === 'en' ? 'Client' : 'Bauherr'}
                     </h4>
                     <div className="ml-4 flex flex-col space-y-1 mt-1">
-                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-600 hover:text-primary transition-colors">Rail Logistics mit Raillog.app</Link>
-                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-600 hover:text-primary transition-colors">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
-                      <Link to="/products/bauberatung/conexpert" className="text-gray-600 hover:text-primary transition-colors">ConExpert</Link>
+                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-600 hover:text-secondary transition-colors">Rail Logistics mit Raillog.app</Link>
+                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-600 hover:text-secondary transition-colors">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
+                      <Link to="/products/bauberatung/conexpert" className="text-gray-600 hover:text-secondary transition-colors">ConExpert</Link>
                     </div>
                   </div>
                   
@@ -238,10 +238,10 @@ export const Layout = ({ children }: LayoutProps) => {
                       {language === 'en' ? 'Construction Company' : 'Bauunternehmen'}
                     </h4>
                     <div className="ml-4 flex flex-col space-y-1 mt-1">
-                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-600 hover:text-primary transition-colors">Rail Logistics mit Raillog.app</Link>
-                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-600 hover:text-primary transition-colors">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
-                      <Link to="/products/abrechnung/extract" className="text-gray-600 hover:text-primary transition-colors">Schnelle Abrechnung von Bauleistungen mit Extract</Link>
-                      <Link to="/products/bauberatung/conexpert" className="text-gray-600 hover:text-primary transition-colors">ConExpert</Link>
+                      <Link to="/products/rail-logistics/raillog-app" className="text-gray-600 hover:text-secondary transition-colors">Rail Logistics mit Raillog.app</Link>
+                      <Link to="/products/stakeholder-planung/conlab" className="text-gray-600 hover:text-secondary transition-colors">Stakeholder- & Bauzeitenplanung mit Conlab</Link>
+                      <Link to="/products/abrechnung/extract" className="text-gray-600 hover:text-secondary transition-colors">Schnelle Abrechnung von Bauleistungen mit Extract</Link>
+                      <Link to="/products/bauberatung/conexpert" className="text-gray-600 hover:text-secondary transition-colors">ConExpert</Link>
                     </div>
                   </div>
                   
@@ -251,7 +251,7 @@ export const Layout = ({ children }: LayoutProps) => {
                       {language === 'en' ? 'Suppliers' : 'Lieferanten'}
                     </h4>
                     <div className="ml-4 flex flex-col space-y-1 mt-1">
-                      <Link to="/products/kundenliste/proj-finder" className="text-gray-600 hover:text-primary transition-colors">Gezielte Kundenliste mit Proj-Finder</Link>
+                      <Link to="/products/kundenliste/proj-finder" className="text-gray-600 hover:text-secondary transition-colors">Gezielte Kundenliste mit Proj-Finder</Link>
                     </div>
                   </div>
                 </div>
@@ -265,11 +265,11 @@ export const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
 
-      <footer className="bg-secondary text-white">
+      <footer className="bg-primary text-white">
         <div className="container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-lg font-bold mb-4">
+              <h3 className="text-lg font-bold mb-4 font-montserrat">
                 {language === 'en' ? 'Contact' : 'Kontakt'}
               </h3>
               <p>https://www.tw-systems.ch</p>
@@ -277,7 +277,7 @@ export const Layout = ({ children }: LayoutProps) => {
              
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">
+              <h3 className="text-lg font-bold mb-4 font-montserrat">
                 {language === 'en' ? 'Address' : 'Adresse'}
               </h3>
               <p>TW Solutions ÖU</p>
@@ -285,23 +285,23 @@ export const Layout = ({ children }: LayoutProps) => {
               <p>Tallinn, Estonia</p>
             </div>
             <div>
-              <h3 className="text-lg font-bold mb-4">
+              <h3 className="text-lg font-bold mb-4 font-montserrat">
                 {language === 'en' ? 'Legal' : 'Rechtliches'}
               </h3>
               <ul>
-                <li><a href="#" className="hover:text-gray-300">
+                <li><a href="#" className="hover:text-light">
                   {language === 'en' ? 'Privacy Policy' : 'Datenschutzbestimmungen'}
                 </a></li>
-                <li><a href="#" className="hover:text-gray-300">
+                <li><a href="#" className="hover:text-light">
                   {language === 'en' ? 'Terms of Use' : 'Nutzungsbedingungen'}
                 </a></li>
-                <li><a href="#" className="hover:text-gray-300">
+                <li><a href="#" className="hover:text-light">
                   {language === 'en' ? 'Imprint' : 'Impressum'}
                 </a></li>
               </ul>
             </div>
           </div>
-          <div className="mt-8 text-center border-t border-gray-600 pt-8">
+          <div className="mt-8 text-center border-t border-secondary pt-8">
             <p>&copy; {new Date().getFullYear()} TrackWise Systems (TW Solutions ÖU).
               {language === 'en' ? ' All rights reserved.' : ' Alle Rechte vorbehalten.'}
             </p>

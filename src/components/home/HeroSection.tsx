@@ -42,35 +42,35 @@ export const HeroSection = () => {
           className="max-w-3xl"
         >
           <h1
-            className="text-5xl font-bold mb-6 text-white drop-shadow-lg"
+            className="text-5xl font-bold mb-6 text-white drop-shadow-lg font-montserrat"
             style={{
               textShadow: '0 2px 4px rgba(0,0,0,0.7), 0 4px 8px rgba(0,0,0,0.4)'
             }}
           >
             {language === 'en'
-              ? 'Digital Solutions for a Strong Railway Industry'
-              : 'Digitale Lösungen für eine starke Bahnindustrie'}
+              ? 'Creating Better Railway Projects Together'
+              : 'Gemeinsam bessere Bahnprojekte gestalten'}
           </h1>
           <p
-            className="text-xl mb-8 text-gray-100 drop-shadow-md"
+            className="text-xl mb-8 text-gray-100 drop-shadow-md font-opensans"
             style={{
               textShadow: '0 1px 3px rgba(0,0,0,0.7), 0 2px 6px rgba(0,0,0,0.4)'
             }}
           >
             {language === 'en'
-              ? 'We combine railway expertise with cutting-edge technology to make railway projects more efficient, safer, and stress-free.'
-              : 'Wir verbinden Bahn-Know-how mit modernster Technologie, um Bahnprojekte effizienter, sicherer und stressfreier zu machen.'}
+              ? 'We\'re passionate about bringing people and technology together to create railway projects that work better for everyone involved.'
+              : 'Wir bringen Menschen und Technologie zusammen, um Bahnprojekte zu schaffen, die für alle Beteiligten besser funktionieren.'}
           </p>
           <div className="flex flex-wrap gap-4">
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="bg-white text-darkBlue px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-100 transition-colors"
+              className="bg-secondary text-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-accent transition-colors font-montserrat"
             >
-              {language === 'en' ? 'Get Started' : 'Loslegen'}
+              {language === 'en' ? 'Join Us' : 'Mitmachen'}
             </motion.button>
             <motion.button
               whileHover={{ scale: 1.05 }}
-              className="border-2 border-white px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-white/10 transition-colors"
+              className="border-2 border-light px-8 py-3 rounded-lg font-semibold shadow-lg hover:bg-white/10 transition-colors font-montserrat"
             >
               {language === 'en' ? 'Learn More' : 'Mehr erfahren'}
             </motion.button>

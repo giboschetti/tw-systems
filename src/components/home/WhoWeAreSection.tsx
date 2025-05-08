@@ -1,73 +1,108 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '../../contexts/LanguageContext';
 
+// Value Card Icons
+const VisionIcon = () => (
+  <svg className="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+  </svg>
+);
+
+const TrustIcon = () => (
+  <svg className="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+  </svg>
+);
+
+const PeopleIcon = () => (
+  <svg className="w-12 h-12 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+  </svg>
+);
+
 export const WhoWeAreSection = () => {
   const { language } = useLanguage();
+  
+  // Value cards data
+  const valueCards = language === 'en'
+    ? [
+        {
+          icon: <VisionIcon />,
+          title: "Vision & Mission",
+          description: "Creating a future where railway projects bring joy, not stress."
+        },
+        {
+          icon: <TrustIcon />,
+          title: "Openness & Trust",
+          description: "Building relationships based on transparency and mutual respect."
+        },
+        {
+          icon: <PeopleIcon />,
+          title: "People & Technology",
+          description: "Putting humans at the center of technological innovation."
+        }
+      ]
+    : [
+        {
+          icon: <VisionIcon />,
+          title: "Vision & Mission",
+          description: "Eine Zukunft schaffen, in der Bahnprojekte Freude machen, nicht Stress verursachen."
+        },
+        {
+          icon: <TrustIcon />,
+          title: "Vertrauen & Sicherheit",
+          description: "Beziehungen aufbauen, die auf Transparenz und gegenseitigem Respekt basieren."
+        },
+        {
+          icon: <PeopleIcon />,
+          title: "Menschen & Technologie",
+          description: "Menschen in den Mittelpunkt der technologischen Innovation stellen."
+        }
+      ];
+  
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl font-bold mb-6">
-              {language === 'en' ? 'Who We Are' : 'Wer wir sind'}
-            </h2>
-            <p className="text-gray-600 mb-4">
-              {language === 'en'
-                ? 'TW-Systems is a leading provider of digital solutions for the construction industry. With over a decade of experience, we understand the unique challenges faced by construction professionals.'
-                : 'TW-Systems ist ein führender Anbieter von digitalen Lösungen für die Baubranche. Mit über einem Jahrzehnt Erfahrung verstehen wir die besonderen Herausforderungen von Bauprofis.'}
-            </p>
-            <p className="text-gray-600 mb-6">
-              {language === 'en'
-                ? 'Our mission is to digitize and optimize construction processes to make them more efficient, transparent, and sustainable for all stakeholders.'
-                : 'Unsere Mission ist die Digitalisierung und Optimierung von Bauprozessen, um sie effizienter, transparenter und nachhaltiger für alle Beteiligten zu gestalten.'}
-            </p>
-            <ul className="space-y-3">
-              {(language === 'en' ? [
-                '1️⃣ 🌍 Vision & Mission: We revolutionize railway construction – more efficient, stress-free, sustainable.',
-                '2️⃣ 🔒 Trust & Security: Data security and transparency are our top priorities.',
-                '3️⃣ ⚙️ Expertise & Progress: Railway construction expertise combined with innovative technology.',
-              ] : [
-                '1️⃣ 🌍 Vision & Mission: Wir revolutionieren den Bahnbau – effizienter, stressfreier, nachhaltiger.',
-                '2️⃣ 🔒 Vertrauen & Sicherheit: Datensicherheit und Transparenz stehen bei uns an erster Stelle.',
-                '3️⃣ ⚙️ Kompetenz & Fortschritt: Bahnbau-Expertise kombiniert mit innovativer Technologie.',
-              ]).map((item, index) => (
-                <motion.li
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="flex items-center text-gray-700"
-                >
-                  <svg className="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
-                  </svg>
-                  {item}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative"
-          >
-            <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-xl">
-              {/* Replace with actual image */}
-              <div className="bg-gray-200 w-full h-full flex items-center justify-center">
-                <span className="text-gray-400">
-                  {language === 'en' ? 'Company Image' : 'Firmenbild'}
-                </span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl font-bold mb-6 font-montserrat">
+            {language === 'en' ? 'Who We Are' : 'Wer wir sind'}
+          </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto mb-4 font-opensans">
+            {language === 'en'
+              ? 'At TrackWise Systems, we\'re a passionate team bridging the railway industry with innovative technology. We deeply understand the challenges railway projects face every day because we\'ve been there ourselves.'
+              : 'Bei TrackWise Systems sind wir ein leidenschaftliches Team, das die Bahnbranche mit innovativer Technologie verbindet. Wir verstehen die täglichen Herausforderungen von Bahnprojekten, weil wir sie selbst erlebt haben.'}
+          </p>
+          <p className="text-gray-600 max-w-3xl mx-auto mb-10 font-opensans">
+            {language === 'en'
+              ? 'Our goal is simple yet meaningful: to create technology that makes railway construction smarter, more human-centered, and less stressful—because every successful project strengthens the communities it serves.'
+              : 'Unser Ziel ist einfach und doch bedeutsam: Technologie zu entwickeln, die den Bahnbau intelligenter, menschenzentrierter und weniger stressig macht – denn jedes erfolgreiche Projekt stärkt die Gemeinschaften, denen es dient.'}
+          </p>
+        </motion.div>
+        
+        <div className="grid md:grid-cols-3 gap-8">
+          {valueCards.map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              whileHover={{ y: -5 }}
+              className="bg-white p-8 rounded-lg shadow-lg border-t-4 border-secondary text-center"
+            >
+              <div className="flex justify-center mb-4">
+                {card.icon}
               </div>
-            </div>
-          </motion.div>
+              <h3 className="text-xl font-bold mb-3 text-darkBlue font-montserrat">{card.title}</h3>
+              <p className="text-gray-600 font-opensans">{card.description}</p>
+            </motion.div>
+          ))}
         </div>
       </div>
     </section>

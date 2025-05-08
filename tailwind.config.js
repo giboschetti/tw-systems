@@ -6,9 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1a365d',
-        secondary: '#2d3748',
-        darkBlue: '#0A2463',
+        primary: '#000033',    /* Dark navy blue */
+        secondary: '#0066CC',  /* Medium blue */
+        accent: '#0099FF',     /* Light blue */
+        light: '#EDEDED',      /* Light gray */
+        darkBlue: '#000033',   /* Same as primary for backward compatibility */
+      },
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
       },
     },
   },
