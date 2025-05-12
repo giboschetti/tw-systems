@@ -48,13 +48,9 @@ export const Layout = ({ children }: LayoutProps) => {
         <nav className="container mx-auto px-4 py-6 font-montserrat">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-              <img
-                src="/images/logos/tw_logo.png"
-                alt="Track Wise Systems Logo"
-                className="h-8 mr-2"
-              />
+             
               <span className="text-xl font-large font-montserrat">
-                <span className="font-bold">T</span>rack <span className="font-bold">W</span>ize Systems
+                TechWise Systems
               </span>
             </Link>
             
